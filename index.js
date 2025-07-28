@@ -21,10 +21,10 @@ app.get('/', (req, res) => {
 });
 
 
-mongoose.connect("mongodb+srv://adewaleolorunosebi:Adewale@1122@simple-crud-app.ve7gyx4.mongodb.net/Node-API?retryWrites=true&w=majority&appName=simple-crud-app")
+mongoose.connect("mongodb+srv://Kratos:Adewale1122@simple-crud-app.4abbili.mongodb.net/Node-API?retryWrites=true&w=majority&appName=simple-crud-app")
 .then(() => {
-    console.log("Connected to MongoDB!");
+    console.log("Connected to MongoDB-atlas");
 })
-.catch(() => {
-        console.log("Connection failed");
+.catch((err) => {
+        console.error("Connection error:", err);
     });
